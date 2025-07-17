@@ -1,0 +1,58 @@
+# Node dependencies
+/node_modules/
+npm-debug.log*
+
+# Build outputs
+/dist/
+/build/
+out/
+*.log
+
+# Electron packager / builder
+*.asar
+*.exe
+*.dmg
+*.app
+*.snap
+*.deb
+*.rpm
+
+# VSCode settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# Electron cache and logs
+.cache/
+logs/
+*.pid
+
+# Optional: TypeScript files
+*.tsbuildinfo
+
+# Sentry or crash dump files
+*.map
+*.stacktrace
+*.dSYM
+
+# IDEs
+.idea/
+*.sublime*
+
+# Electron forge or builder
+/out/
+/make/
+release/
+
+# Electron-builder extras
+electron-builder-cache/
+electron-builder.yaml
+ 
