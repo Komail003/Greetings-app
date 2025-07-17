@@ -2,6 +2,12 @@ const { app, BrowserWindow, ipcMain, powerMonitor } = require("electron");
 const path = require("path");
 
 let mainWindow;
+const os = require("os");
+const userName = os.userInfo().username;
+
+powerMonitor.on("unlock-screen", () => {
+  mainWindow.webContents.send("show-greeting", userName);
+});
 
 function createWindow() {
   mainWindow = new BrowserWindow({
